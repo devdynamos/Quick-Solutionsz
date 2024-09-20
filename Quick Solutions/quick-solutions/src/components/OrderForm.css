@@ -1,0 +1,109 @@
+.orderform-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-top: 80px;
+}
+
+.ordform-title {
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #d51920;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+}
+
+.orderform-title {
+  text-align: center;
+  font-size: 28px;
+  color: black;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+}
+
+orderform {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.orderform-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.orderform-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.orderform-control {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+textarea.orderform-control {
+  resize: vertical;
+}
+
+.orderbtn-group {
+  grid-column: 1 / span 3;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.orderbtn {
+  padding: 10px 20px;
+  background-color: #d51920;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.orderbtn:hover {
+  background-color: #b5181c;
+}
+
+.orderget-started-btn {
+  background-color: #007bff;
+}
+
+.orderget-started-btn:hover {
+  background-color: #0069d9;
+}
+
+.order-now-btn {
+  background-color: #28a745;
+}
+
+.order-now-btn:hover {
+  background-color: #218838;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  orderform {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  orderform {
+    grid-template-columns: 1fr;
+  }
+
+  .orderbtn-group {
+    grid-column: 1 / span 1;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}

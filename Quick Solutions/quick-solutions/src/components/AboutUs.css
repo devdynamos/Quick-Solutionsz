@@ -1,0 +1,136 @@
+/* About Us Section CSS */
+
+.about-us-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  margin-top: 100px;
+}
+
+.about-us-content {
+  width: 50%;
+}
+
+.about-us-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-us-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about-us-images {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-us-image-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.about-us-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Media Queries for responsiveness */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .about-us-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .about-us-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-us-heading {
+    font-size: 2rem;
+  }
+
+  .about-us-text {
+    font-size: 1rem;
+  }
+
+  .about-us-images {
+    width: 100%;
+  }
+
+  .about-us-image-container {
+    height: 200px;
+  }
+}
+
+/* Medium devices (tablets, 600px to 900px) */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .about-us-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+  }
+
+  .about-us-content {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .about-us-heading {
+    font-size: 2.5rem;
+  }
+
+  .about-us-text {
+    font-size: 1.1rem;
+  }
+
+  .about-us-images {
+    width: 100%;
+  }
+
+  .about-us-image-container {
+    height: 220px;
+  }
+}
+
+/* Large devices (desktops, 900px and up) */
+@media only screen and (min-width: 900px) {
+  .about-us-container {
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .about-us-content {
+    width: 50%;
+  }
+
+  .about-us-heading {
+    font-size: 3rem;
+  }
+
+  .about-us-text {
+    font-size: 1.2rem;
+  }
+
+  .about-us-images {
+    width: 40%;
+  }
+
+  .about-us-image-container {
+    height: 250px;
+  }
+}

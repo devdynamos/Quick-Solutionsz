@@ -1,0 +1,128 @@
+.pricing-container {
+  text-align: center;
+  padding: 100px 20px 20px; /* Added padding to the top */
+}
+
+.pricing-container h1 {
+  font-size: 1.8em; /* Reduced font size */
+  margin-bottom: 10px;
+  color: #dc3545; /* Red color */
+}
+
+.pricing-container p {
+  font-size: 1em; /* Reduced font size */
+  margin-bottom: 20px;
+}
+
+.pricing-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allows the options to wrap */
+}
+
+.pricing-option {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px; /* Ensures a maximum width */
+  margin: 10px auto; /* Centered horizontally */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-option h2 {
+  font-size: 1.2em; /* Reduced font size */
+  margin-bottom: 10px;
+  color: #dc3545; /* Red color */
+}
+
+.pricing-option h3 {
+  font-size: 1em; /* Reduced font size */
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.price {
+  font-size: 2em; /* Reduced font size */
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #dc3545; /* Red color */
+  margin-left: -10px;
+}
+
+.pricing-option ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-option li {
+  margin-bottom: 10px;
+}
+
+.pricing-option li::before {
+  content: '✔'; /* Only one tick mark */
+  color: #dc3545; /* Red color */
+  margin-right: 10px;
+}
+
+.order-button {
+  background-color: #dc3545; /* Red color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #c82333; /* Darker red color */
+}
+
+.standard {
+  border-left: 5px solid #dc3545; /* Red color */
+}
+
+.merit {
+  border-left: 5px solid #ffc107; /* Yellow color */
+}
+
+.distinction {
+  border-left: 5px solid #28a745; /* Green color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  /* For large devices */
+  .pricing-option {
+    max-width: 45%; /* Adjust width for large devices */
+    margin: 10px 2.5%; /* Add margin for spacing */
+  }
+}
+
+@media (max-width: 768px) {
+  /* For medium devices */
+  .pricing-option {
+    max-width: 100%; /* Full width for medium devices */
+    margin: 10px auto; /* Centered horizontally */
+  }
+}
+
+@media (max-width: 576px) {
+  /* For small devices */
+  .pricing-option {
+    max-width: 100%; /* Full width for small devices */
+    margin: 10px auto; /* Centered horizontally */
+  }
+
+  .pricing-container h1 {
+    font-size: 1.5em; /* Further reduce font size */
+  }
+
+  .price {
+    font-size: 1.5em; /* Further reduce font size */
+  }
+}

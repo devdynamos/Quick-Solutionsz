@@ -1,0 +1,74 @@
+/* Blog Detail Container Styling */
+.blog-detail {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto; /* Center align the blog detail container */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 40px; /* Spacing from the top of the page */
+  }
+  
+  /* Blog Title Styling */
+  .blog-detail-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Blog Image Styling */
+  .blog-detail-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Blog Content Styling */
+  .blog-detail-content {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .blog-detail-content p {
+    margin-bottom: 20px;
+  }
+  
+  .blog-detail-content h2,
+  .blog-detail-content h3,
+  .blog-detail-content h4 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-detail-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  .blog-detail-content blockquote {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #ccc;
+  }
+  
+  .blog-detail-content ul,
+  .blog-detail-content ol {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+  
+  .blog-detail-content ul li,
+  .blog-detail-content ol li {
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,100 @@
+/* Existing CSS styles */
+/* Review Container Styling */
+.review-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.reviews-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.review-item, .middle-container {
+  background-color: #333;
+  border: 1px solid yellow;
+  border-radius: 8px;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  flex: 1 1 calc(33.333% - 20px); /* Ensures 3 items per row */
+  max-width: calc(33.333% - 20px); /* Ensures 3 items per row */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.middle-container {
+  color: black;
+}
+
+.review-item:hover, .middle-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.middle-container {
+  background-color: #f0f0f0;
+}
+
+.middle-container h2 {
+  color: #333;
+}
+
+.homewrite-review {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.homewrite-review:hover {
+  background-color: rgba(249, 245, 245, 0.467);
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: rgba(249, 245, 245, 0.467);
+}
+
+@media (max-width: 768px) {
+  .review-item, .middle-container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Star Rating Styles */
+.star-rating {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.star-rating i {
+  color: gold;
+  font-size: 20px;
+  margin: 0 2px;
+}

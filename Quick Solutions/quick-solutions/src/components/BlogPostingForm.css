@@ -1,0 +1,70 @@
+.blog-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.blog-form h2 {
+  text-align: center;
+}
+
+.blog-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.blog-form input[type="text"], .blog-form .dropzone {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.blog-form .dropzone {
+  padding: 20px;
+  width: 93%;
+  text-align: center;
+  cursor: pointer;
+  border: 2px dashed #ddd;
+  background-color: #f1f1f1;
+}
+
+.blog-form .images-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  overflow-x: auto;  /* Allows horizontal scrolling if content overflows */
+}
+
+.blog-form .images-preview img {
+  max-width: 100px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.blog-form .error {
+  color: red;
+  margin-top: 10px;
+}
+
+.blog-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.blog-form button:hover {
+  background-color: #218838;
+}
